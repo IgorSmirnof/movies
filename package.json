@@ -1,7 +1,7 @@
 {
   "name": "diploma-yandex-praktikum",
-  "version": "15.0.0",
-  "description": "backend for movies-explorer yandex",
+  "version": "15.3.0",
+  "description": "backend for movies yandex",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",

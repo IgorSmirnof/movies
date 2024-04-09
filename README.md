@@ -3,8 +3,5 @@
 
 ## Ссылки на проект
 
-IP 158.160.108.139
+IP 34.89.204.91 Google Cloud
 
-Frontend https://smirnov.nomoreparties.co
-
-Backend https://api.smirnov.nomoreparties.co

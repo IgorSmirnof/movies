@@ -30,7 +30,7 @@ const movieSchema = new mongoose.Schema(
       required: true,
       validate: {
         validator: (v) => validator.isURL(v),
-        message: 'Передан некорректный URL',
+        message: 'Invalid URL passed',
       },
     },
     trailerLink: {
@@ -38,7 +38,7 @@ const movieSchema = new mongoose.Schema(
       required: true,
       validate: {
         validator: (v) => validator.isURL(v),
-        message: 'Передан некорректный URL',
+        message: 'Invalid URL passed',
       },
     },
     thumbnail: {
@@ -46,7 +46,7 @@ const movieSchema = new mongoose.Schema(
       required: true,
       validate: {
         validator: (v) => validator.isURL(v),
-        message: 'Передан некорректный URL',
+        message: 'Invalid URL passed',
       },
     },
     owner: {

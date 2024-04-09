@@ -6,15 +6,15 @@ const userSchema = new mongoose.Schema(
   {
     name: {
       type: String,
-      required: [true, 'Поле должно быть заполнено'],
-      minlength: [2, 'Поле должно быть длиной от 2 до 30 символов'],
-      maxlength: [30, 'Поле должно быть длиной от 2 до 30 символов'],
+      required: [true, 'The field must be filled in'],
+      minlength: [2, 'The field must be between 2 and 30 characters long'],
+      maxlength: [30, 'The field must be between 2 and 30 characters long'],
       // default: 'Имя',
     },
 
     email: {
       type: String,
-      required: [true, 'Поле должно быть заполнено'],
+      required: [true, 'The field must be filled in'],
       unique: true,
       validate: {
         validator: (data) => validator.isEmail(data),
@@ -24,7 +24,7 @@ const userSchema = new mongoose.Schema(
 
     password: {
       type: String,
-      required: [true, 'Поле должно быть заполнено'],
+      required: [true, 'The field must be filled in'],
       select: false,
     },
   },
